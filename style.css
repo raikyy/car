@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, red 30%, black 30%);
+  font-family: "Poppins", sans-serif;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+}
+.header__icon {
+  padding-right: 685px;
+  padding-left: 74px;
+  padding-top: 46px;
+  display: flex;
+}
+.header__text {
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 21px;
+  display: flex;
+}
+.header__container {
+  display: flex;
+  padding-top: 81px;
+}
+.nav__list {
+  display: flex;
+}
+.nav__link {
+  text-decoration: none;
+  color: #ffffff;
+  padding-right: 71px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.header__search {
+  display: flex;
+  height: 31px;
+  width: 189px;
+  border-bottom: 1px solid #a8a8a8;
+  padding-right: 204px;
+}
+.header__s-img {
+  padding-right: 24px;
+}
+.header__s-text {
+  color: #a8a8a8;
+}
+.wrapper {
+  height: 100vh;
+}
+.logo__text {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 350px;
+  padding: 0 286px;
+  position: absolute;
+  z-index: 0;
+}
+.logo__img {
+  width: 1348px;
+  margin-left: 234px;
+  z-index: 1;
+  position: relative;
+  top: 75px;
+}
+.markers {
+  position: absolute;
+  width: 152px;
+  height: 32px;
+  left: 0px;
+  top: 573px;
+  border-bottom: #000 3px solid;
+}
+.marker {
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  width: 88px;
+  height: 30px;
+  left: 64px;
+}
+.markers-two {
+  position: absolute;
+  width: 152px;
+  height: 32px;
+  right: 0px;
+  top: 573px;
+  border-bottom: #ff0000 3px solid;
+}
+.marker-two {
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  width: 88px;
+  height: 30px;
+  right: 64px;
+}
+.video {
+  position: absolute;
+  background: #df4848;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  height: 187px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video__img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: #ffffff 5px solid;
+  overflow: hidden;
+  position: relative;
+  margin-right: 25px;
+}
+.video__el {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+}
+.video__text {
+  font-weight: 600;
+  font-size: 20px;
+}
+.link {
+  display: flex;
+  position: absolute;
+  left: 739px;
+  color: #ff0000;
+  bottom: 40px;
+  font-weight: 600;
+  font-size: 25px;
+}
+.link__el {
+  text-decoration: none;
+  color: #ff0000;
+  padding-left: 5px;
+}
