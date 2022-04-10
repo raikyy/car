@@ -4,10 +4,10 @@
 body {
   padding: 0;
   margin: 0;
-  background: linear-gradient(to right, red 30%, black 30%);
   font-family: "Poppins", sans-serif;
   background-repeat: no-repeat;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 ul,
 li {
@@ -15,16 +15,31 @@ li {
   margin: 0;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
+.wrapper {
+  background: linear-gradient(to right, red 30%, black 30%);
+  height: 100vh;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header__icon {
+.icon {
   padding-right: 685px;
   padding-left: 74px;
   padding-top: 46px;
   display: flex;
+  align-items: center;
 }
-.header__text {
+.icon__text {
   font-weight: 600;
   font-size: 20px;
   padding-left: 21px;
@@ -36,6 +51,9 @@ li {
 }
 .nav__list {
   display: flex;
+}
+.nav__item {
+  margin-left: 72px;
 }
 .nav__link {
   text-decoration: none;
@@ -49,32 +67,51 @@ li {
   height: 31px;
   width: 189px;
   border-bottom: 1px solid #a8a8a8;
-  padding-right: 204px;
+  margin-left: 54px;
+  position: relative;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 79px;
+  margin-right: 204px;
 }
-.header__s-img {
-  padding-right: 24px;
+.header__search::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  left: 0;
+  background-image: url(img/search.png);
 }
-.header__s-text {
+.header__input {
+  outline: none;
+  border: none;
+  background-color: #000;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 8px;
+  padding-left: 44px;
+  width: 100%;
+  font-size: 18px;
+}
+.header__input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
   color: #a8a8a8;
-}
-.wrapper {
-  height: 100vh;
 }
 .logo__text {
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 600;
   font-size: 350px;
-  padding: 0 286px;
-  position: absolute;
+  position: relative;
   z-index: 0;
 }
 .logo__img {
   width: 1348px;
-  margin-left: 234px;
   z-index: 1;
-  position: relative;
-  top: 75px;
+  position: absolute;
+  top: 409px;
 }
 .markers {
   position: absolute;
@@ -142,11 +179,11 @@ li {
 .link {
   display: flex;
   position: absolute;
-  left: 739px;
   color: #ff0000;
-  bottom: 40px;
   font-weight: 600;
   font-size: 25px;
+  bottom: 40px;
+margin-left: 419px;
 }
 .link__el {
   text-decoration: none;
